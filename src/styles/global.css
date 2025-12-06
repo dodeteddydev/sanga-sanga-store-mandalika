@@ -1,0 +1,25 @@
+@import url("./header.css");
+@import url("./content.css");
+@import url("./footer.css");
+
+:root {
+  --color-primary: #778873;
+  --color-secondary: #a1bc98;
+
+  --color-surface: #d2dcb6;
+  --color-background: #f1f3e0;
+
+  --text-primary: #2f322d;
+  --text-secondary: #4f544c;
+
+  --border-color: #c7d0b8;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background: var(--color-background);
+  color: var(--text-primary);
+}
