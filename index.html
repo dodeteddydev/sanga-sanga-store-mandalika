@@ -4,18 +4,253 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/sanga-sanga.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="css/style.css" />
     <title>Minyak Sanga Sanga - Depo Resmi & Reseller Original</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- HEADER -->
+    <header class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img class="hamburger" src="/icons/menu.svg" alt="Menu" />
+          <a href="#beranda">
+            <img
+              class="logo"
+              src="/sanga-sanga.webp"
+              title="Logo Sanga Sanga"
+              alt="Sanga Sanga Lombok"
+            />
+          </a>
+        </div>
+
+        <ul class="navigation">
+          <li class="navigation-item"><a href="#beranda">Beranda</a></li>
+          <li class="navigation-item"><a href="#tentang">Tentang</a></li>
+          <li class="navigation-item"><a href="#produk">Produk</a></li>
+        </ul>
+
+        <button class="button-order">Pesan Sekarang !</button>
+      </nav>
+
+      <aside id="sidebar" class="sidebar sidebar-hidden">
+        <div class="sidebar-close">
+          <img src="/icons/x.svg" alt="Close" />
+        </div>
+        <nav>
+          <ul class="sidebar-navigation">
+            <li class="navigation-item"><a href="#beranda">Beranda</a></li>
+            <li class="navigation-item"><a href="#tentang">Tentang</a></li>
+            <li class="navigation-item"><a href="#produk">Produk</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- CONTENT -->
+    <main>
+      <!-- HOME CONTENT SECTION -->
+      <section id="beranda" class="home">
+        <div class="home-title">
+          <h1>Sanga sanga Store Mandalika</h1>
+          <h3>Depo & Reseller Resmi Minyak Sanga Sanga</h3>
+          <p>
+            Depo resmi minyak Sanga Sanga — menyediakan minyak herbal balur
+            asli, 100% alami, resmi bersertifikasi Halal & BPOM, dengan layanan
+            distribusi ke seluruh Indonesia.
+          </p>
+        </div>
+
+        <button class="button-order">Belanja Sekarang !</button>
+
+        <div class="home-product">
+          <img
+            title="Produk Minyak Sanga Sanga"
+            src="/images/produk.png"
+            alt="Minyak Sanga Sanga"
+          />
+
+          <div>
+            <h3>Tentang Minyak Sanga Sanga</h3>
+            <p>
+              Minyak Sanga Sanga adalah minyak balur herbal premium yang diracik
+              dari 140 bahan alami, digunakan untuk membantu:
+            </p>
+
+            <ul>
+              <li>Meredakan pegal & nyeri otot</li>
+              <li>Mengurangi rasa capek & stres</li>
+              <li>Membantu relaksasi tubuh</li>
+              <li>Membantu kelancaran peredaran darah</li>
+              <li>Menunjang pemulihan setelah aktivitas berat</li>
+            </ul>
+
+            <p>
+              Cocok untuk penggunaan pribadi, keluarga, dan usaha (spa, terapi
+              pijat, toko herbal, reseller).
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END OF HOME CONTENT SECTION -->
+
+      <!-- ABOUT CONTENT SECTION -->
+      <section id="tentang" class="about">
+        <div class="about-title">
+          <h1>Tentang Kami</h1>
+          <p>
+            Kami adalah depo dan reseller resmi Minyak Sanga Sanga yang
+            menyediakan produk herbal berkualitas untuk konsumen, toko,
+            reseller, dan praktisi terapi di seluruh Indonesia. Produk terjamin
+            100% asli, resmi, bersertifikat Halal MUI & terdaftar BPOM.
+          </p>
+
+          <div class="about-people">
+            <div class="about-founders">
+              <div class="about-founder">
+                <img
+                  title="Bambang Pranoto Visioner & Founder Sanga Sanga Group"
+                  src="/images/founder.webp"
+                  alt="Bambang Pranoto Visioner & Founder Sanga Sanga Group"
+                />
+                <h3>Bambang Pranoto Visioner & Founder Sanga Sanga Group</h3>
+              </div>
+
+              <div class="about-founder">
+                <img
+                  title="Riva Effrianti Founder & CEO Sanga Sanga Group"
+                  src="/images/ceo.webp"
+                  alt="Riva Effrianti Founder & CEO Sanga Sanga Group"
+                />
+                <h3>Riva Effrianti<br />Founder & CEO Sanga Sanga Group</h3>
+              </div>
+            </div>
+
+            <div class="about-reseller">
+              <img
+                title="Dodek Marley Reseller Minyak Sanga Sanga Lombok"
+                src="/images/reseller.webp"
+                alt="Dodek Marley Reseller Minyak Sanga Sanga Lombok"
+              />
+              <h3>Dodek Marley<br />Reseller Minyak Sanga Sanga Lombok</h3>
+            </div>
+          </div>
+        </div>
+
+        <img
+          title="Setifikat Depo Resmi Minyak Sanga Sanga"
+          src="/images/setifikat.webp"
+          alt="Setifikat Depo Resmi Minyak Sanga Sanga"
+        />
+      </section>
+      <!-- END OF ABOUT CONTENT SECTION -->
+
+      <!-- PRODUCT CONTENT SECTION -->
+      <section id="produk" class="product">
+        <div class="product-title">
+          <h1>Produk</h1>
+
+          <p>
+            Resmi terdaftar Di BPOM & telah Tersertifikasi HALAL Terbuat dari
+            bahan herbal, produk ini bisa digunakan mulai dari balita hingga
+            lansia serta ibu hamil. Rasakan manfaatnya sekarang juga. Pesan
+            sekarang dan mulai hidup sehat!
+          </p>
+        </div>
+
+        <div class="product-item-wrapper">
+          <div class="product-item">
+            <img
+              title="Sabun Kaliku Kaliku"
+              src="/images/sabun-kaliku-kaliku.png"
+              alt="Sabun Kaliku Kaliku"
+            />
+
+            <h3>Sabun Kaliku Kaliku</h3>
+
+            <button class="button-order">Pesan Sekarang !</button>
+          </div>
+
+          <div class="product-item">
+            <img
+              title="Minyak Sanga Sanga"
+              src="/images/minyak-sanga-sanga.png"
+              alt="Minyak Sanga Sanga"
+            />
+
+            <h3>Minyak Sanga Sanga</h3>
+
+            <button class="button-order">Pesan Sekarang !</button>
+          </div>
+
+          <div class="product-item">
+            <img
+              title="Minyak Tanamilah Tanahmu"
+              src="/images/sabun-tanamilah-tanahmu.png"
+              alt="Minyak Tanamilah Tanahmu"
+            />
+
+            <h3>Sabun Tanamilah Tanahmu</h3>
+
+            <button class="button-order">Pesan Sekarang !</button>
+          </div>
+        </div>
+      </section>
+      <!-- END OF PRODUCT CONTENT SECTION -->
+    </main>
+    <!-- END OF CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="products-address">
+        <h3>Depo & Reseller Resmi Minyak Sanga Sanga</h3>
+        <p>
+          Menyediakan minyak herbal balur original, bersertifikasi Halal & BPOM,
+          dengan layanan pengiriman ke seluruh Indonesia.
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.740913364947!2d116.28600638507152!3d-8.716134766495534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb19ef29493a1%3A0xfb678aa523f156d!2sDepo%20Kutus%20Kutus!5e0!3m2!1sid!2sid!4v1764420706596!5m2!1sid!2sid"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="products-contact">
+        <a href="https://www.facebook.com/dodexs.marley" target="_blank">
+          <img
+            title="Facebook Minyak Sanga Sanga Lombok"
+            src="/icons/facebook.svg"
+            alt="Facebook"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/dodekmarley/" target="_blank">
+          <img
+            title="Instagram Minyak Sanga Sanga Lombok"
+            src="/icons/instagram.svg"
+            alt="Instagram"
+          />
+        </a>
+
+        <a href="https://wa.link/ne9y51" target="_blank">
+          <img
+            title="Nomor Telepon Minyak Sanga Sanga Lombok"
+            src="/icons/phone.svg"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+
+      <p class="copyright">
+        © <span class="year"></span> Sanga Sanga Store Mandalika
+      </p>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
