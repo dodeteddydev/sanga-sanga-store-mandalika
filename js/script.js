@@ -9,15 +9,19 @@ btn.addEventListener("click", () => {
   menu.hidden = open;
 });
 
-const btnOrderNow = document.querySelector(".header__button-order");
+const btnOrderNow = document.querySelectorAll(".header__button-order");
 
-btnOrderNow.addEventListener("click", () => {
-  window.open("https://wa.link/ne9y51", "_blank");
+btnOrderNow.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.open("https://wa.link/ne9y51", "_blank");
+  });
 });
 
 // PRODUCT
-const btnBuyProduct = document.querySelector("#buy-product");
+const btnBuyProduct = document.querySelectorAll("#buy-product");
 
-btnBuyProduct.addEventListener("click", () => {
-  window.open("https://wa.link/ne9y51", "_blank");
+btnBuyProduct.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.open("https://wa.link/ne9y51", "_blank");
+  });
 });
