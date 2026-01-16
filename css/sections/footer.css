@@ -1,17 +1,21 @@
 .footer {
   margin-top: 30px;
-  display: flex;
-
   padding: 20px;
 
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
   box-shadow: var(--shadow-elevation);
+}
+
+.footer p {
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+.footer__contact-wrapper {
+  display: flex;
 }
 
 .footer__left-section {
@@ -53,7 +57,7 @@
 }
 
 @media (max-width: 840px) {
-  .footer {
+  .footer__contact-wrapper {
     flex-direction: column;
   }
 

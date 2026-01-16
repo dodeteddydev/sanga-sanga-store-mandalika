@@ -25,3 +25,6 @@ btnBuyProduct.forEach((button) => {
     window.open("https://wa.link/ne9y51", "_blank");
   });
 });
+
+// FOOTER
+document.getElementById("year").textContent = new Date().getFullYear();
